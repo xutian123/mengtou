@@ -1,0 +1,63 @@
+<!-- <smt-search-bar></smt-search-bar> -->
+<view class="vote">
+    <view class="title">名人榜</view>
+    <view class="vote_wrap">
+        <view class="relative">
+            <view class="No2">
+                <view class="num second">2</view>
+                <image src="{{charas[1].headUrl}}"></image>
+                <view class="name">{{charas[1].name}}</view>
+                <view class="iconfont icon-bqxin favo {{charas[1].status==1?'active':''}}" data-id="{{charas[1].id}}" bindtap="love"></view>
+                <view class="favo_count {{charas[1].status==1?'active':''}}">{{charas[1].favo}}</view>
+            </view>
+        </view>
+        <view class="relative">
+            <view class="No1">
+                <view class="num first">1</view>
+                <image src="{{charas[0].headUrl}}"></image>
+                <view class="fs name" white-space:pre-line>{{charas[0].name}}</view>
+                <view class="iconfont icon-bqxin favo {{charas[0].status==1?'active':''}}" data-id="{{charas[0].id}}" bindtap="love"></view>
+                <view class="favo_count {{charas[0].status==1?'active':''}}"">{{charas[0].favo}}</view>
+            </view>
+        </view>
+        <view class="relative">
+            <view class="No3">
+                <view class="num third">3</view>
+                <image src="{{charas[2].headUrl}}"></image>
+                <view class="name">{{charas[2].name}}</view>
+                <view class="iconfont icon-bqxin favo {{charas[2].status==1?'active':''}}" data-id="{{charas[2].id}}" bindtap="love"></view>
+                <view class="favo_count {{charas[2].status==1?'active':''}}"">{{charas[2].favo}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="lists">
+    <view class="chara" s-for="charas" >
+        <view class="rank">{{index+1}}</view>
+        <image src="{{item.headUrl}}"></image>
+        <view>
+            <view>{{item.name}}</view>
+        </view>
+        <view class="right">
+            <view class="favo_count {{item.status==1?'active':''}}">{{item.favo}}</view>
+            <view class="iconfont icon-bqxin favo {{item.status==1?'active':''}}" data-id="{{item.id}}" bindtap="love"></view>
+        </view>
+    </view>
+</view>
+<view class="login_wrap {{flag2==true?'show':''}}">
+    <view class="login" >
+            <view>
+                请登录再操作
+            </view>
+        <view class="btn">
+            <button bindtap="cancel">取消</button>
+            <button bindgetuserinfo="handleGetUserInfo"
+                    open-type="getUserInfo">登录</button>
+        </view>
+    </view>
+</view>
+
+<!-- <navigator url="../creat/index"><view class="iconfont icon-jiahao fixed"></view></navigator> -->
+<view class="panel {{flag1==true?'show':''}}"></view>

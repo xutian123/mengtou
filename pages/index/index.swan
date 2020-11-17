@@ -1,0 +1,60 @@
+<view class="page">
+    <view class="mess_wrap">
+        <view class="head_wrap">
+            <view class="head" style="vertical-align: middle">
+                <image src="https://himg.bdimg.com/sys/portrait/item/dcc9cad8d2b95fc8cb5f818e"></image>
+            </view>
+            <view class="username">
+                <view>守夜_人_</view>
+                <view>11月15日</view>
+            </view>
+            <view class="admin">管理员</view>
+            <!-- <view class="iconfont icon-gengduo-copy more"
+            bindtap="more"></view> -->
+        </view>
+        <view class="content">
+            大家有什么想要添加的动漫角色可以留言给我，我会添加上去的。
+        </view>
+        <view class="iconfont icon-fanhuidingbuzhiding top">置顶</view>
+        <!-- <view s-if='{{item.username===userinfo.nickName}}'>删除</view> -->
+    </view>
+
+    <view class="mess_wrap"  s-for="{{messList}}">
+        <view class="head_wrap">
+            <view class="head" style="vertical-align: middle">
+                <image src="{{item.headUrl}}"></image>
+            </view>
+            <view class="username">
+                <view>{{item.username}}</view>
+                <view>11月15日</view>
+            </view>
+            <view s-if='{{item.username=="守夜_人_"?true:false}}' class="admin">管理员</view>
+            <!-- 更多 -->
+            <view class="iconfont icon-gengduo-copy more" s-if='{{userinfo.nickName==="守夜_人_" || item.username===userinfo.nickName}}'
+            bindtap="more" data-id="{{item.id}}"></view>
+        </view>
+        <view class="content">
+            {{item.content}}
+        </view>
+    </view>
+
+    <view class="delete_box {{flag2==true?'show':''}}">
+        <view bindtap="delete">删除</view>
+        <view bindtap="cancle">取消</view>
+    </view>
+    <view class="login_wrap {{flag3==true?'show':''}}">
+    <view class="login" >
+        <view>
+            确认删除发言？
+        </view>
+        <view class="btn">
+            <button bindtap="close" data-index="0">取消</button>
+            <button bindtap="close" data-index="1">确定</button>
+        </view>
+    </view>
+</view>
+    <!-- 发送留言 -->
+    <navigator s-if="{{userinfo!='' && status=='1'?true:false}}" url="../sentData/index"><view class="iconfont icon-fasong fixed"></view></navigator>
+
+</view>
+ <view class="panel {{flag1==true?'show':''}}"></view>

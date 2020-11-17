@@ -1,0 +1,36 @@
+page{
+    background-color: #fff;
+}
+.head{
+    padding: 10rpx 0;
+    background-color: rgb(247, 247, 247);
+}
+.head text{
+    padding: 0 50rpx;
+    color: #333;
+    /* background-color: red; */
+}
+textarea{
+    width: 100%;
+    padding: 0 50rpx;
+    box-sizing: border-box;
+}
+
+.head text:nth-child(2){
+    float: right;
+}
+input{
+    padding: 30rpx;
+    font-size: 33rpx;
+}
+
+.sentMess{
+    /* display: none; */
+    font-size: 80rpx;
+}
+
+.fixed{
+    position: absolute;
+    right:8vw;
+    bottom: 24.051466666666666vw;
+}

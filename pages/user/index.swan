@@ -1,0 +1,18 @@
+<view class="user_info_wrap">
+    <view class="user_info_contentBox">
+        <view s-if="{{userinfo.avatarUrl}}">
+            <view class="user_head" >
+                <image src="{{userinfo.avatarUrl}}"></image>
+            </view>
+            <text>{{userinfo.nickName}}</text>
+        </view>
+        <button class="login" bindgetuserinfo="handleGetUserInfo"
+        s-else open-type="getUserInfo"
+        >登录</button>
+    </view>
+    <view class="user_func">
+        <view class="my_vote" bindtap="loading">我参与的投票</view>
+        <view class="my_auditing" bindtap="loading">我的申请</view>
+    </view>
+</view>
+<button class="quit" bindtap="quit" s-if="{{userinfo.avatarUrl}}">退出登录</button>

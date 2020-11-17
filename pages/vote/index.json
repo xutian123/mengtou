@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "人气打榜",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "smt-search-bar": "@smt-ui/component/src/search-bar"
+    }
+}

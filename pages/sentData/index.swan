@@ -1,0 +1,7 @@
+<view class="head">
+    <text bindtap="back">取消</text>
+    <text bindtap="sentMsg">发送</text>
+</view>
+<!-- <input focus="{true}" bindblur="sent" bindinput="messageInput" name="input"/> -->
+<textarea focus="{true}" bindblur="sent" bindinput="messageInput" name="input"></textarea>
+<!-- <view class="sentMess icon-fasong iconfont fixed" style='color:{{color}}'></view> -->

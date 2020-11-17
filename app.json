@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/creat/index",
+
+        "pages/sentData/index",
+        "pages/vote/index",
+        "pages/user/index"
+
+    ],
+    "tabBar": {
+        "backgroundColor": "#fff",
+        "borderStyle": "black",
+        "color": "#000000",
+        "selectedColor": "#1296db",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "icons/home.png",
+            "selectedIconPath": "icons/home-o.png"
+        },{
+            "pagePath": "pages/vote/index",
+            "text": "人气打榜",
+            "iconPath": "icons/vote.png",
+            "selectedIconPath": "icons/vote-o.png"
+        },{
+            "pagePath": "pages/user/index",
+            "text": "我的",
+            "iconPath": "icons/my.png",
+            "selectedIconPath": "icons/my-o.png"
+        }]
+    },
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "萌投",
+        "backgroundTextStyle": "dark"
+    }
+}

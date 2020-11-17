@@ -1,0 +1,81 @@
+{
+    "appid": "17767960",
+    "compilation-args": {
+        "common": {
+            "enhance": true
+        },
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/user/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 0,
+                "text": "我的"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/index/index",
+                    "isUpdate": false,
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "首页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/sentData/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 2,
+                "text": "发送留言"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/vote/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 3,
+                "text": "人气打榜"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/creat/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 4,
+                "text": "创建角色"
+            }
+        ],
+        "selected": 1
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 1028188
+    },
+    "projectname": "mengtou",
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.220.16",
+            "extensionJsVersion": "1.18.3"
+        }
+    }
+}

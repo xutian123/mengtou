@@ -1,0 +1,17 @@
+{
+    "navigationBarTitleText": "添加角色",
+    "usingComponents": {
+        "smt-image-uploader": "@smt-ui/component/src/image-uploader",
+        "smt-person-card": "@smt-ui/component/src/person-card",
+        "smt-voice-recognizer": "@smt-ui/component/src/voice-recognizer",
+        "smt-steps": "@smt-ui/component/src/steps",
+        "smt-refresh": "@smt-ui/component/src/refresh",
+        "smt-anchor-img": "@smt-ui/component/src/anchor-img",
+        "smt-list": "@smt-ui/component/src/list",
+        "smt-mask": "@smt-ui/component/src/mask",
+        "smt-navigation": "@smt-ui/component/src/navigation",
+        "smt-notice-bar": "@smt-ui/component/src/notice-bar",
+        "smt-cascade": "@smt-ui/component/src/cascade",
+        "smt-collapse": "@smt-ui/component/src/collapse"
+    }
+}
